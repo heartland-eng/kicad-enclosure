@@ -1,0 +1,59 @@
+(kicad_pcb (version 20171130) (host pcbnew 5.1.2)
+
+  (general
+    (thickness 1.6)
+  )
+
+  ; KiCad 5 legacy format: footprints are called "module" and layer names are
+  ; unquoted atoms.  Exercises legacy parsing (module nodes, unquoted layers,
+  ; np_thru_hole pads with unquoted pad number "").
+
+  (module MountingHole_3mm (layer F.Cu) (tedit 0) (tstamp 0)
+    (at 3 3)
+    (fp_text reference H1 (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15))))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
+  )
+
+  (module MountingHole_3mm (layer F.Cu) (tedit 0) (tstamp 0)
+    (at 37 3)
+    (fp_text reference H2 (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15))))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
+  )
+
+  (module MountingHole_3mm (layer F.Cu) (tedit 0) (tstamp 0)
+    (at 37 27)
+    (fp_text reference H3 (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15))))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
+  )
+
+  (module MountingHole_3mm (layer F.Cu) (tedit 0) (tstamp 0)
+    (at 3 27)
+    (fp_text reference H4 (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15))))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
+  )
+
+  (module Resistor_SMD:R_0805 (layer F.Cu) (tedit 0) (tstamp 0)
+    (at 20 15 90)
+    (fp_text reference R1 (at 0 1.4) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text value 10k (at 0 -1.4) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15))))
+    (fp_line (start -1.2 -0.7) (end 1.2 -0.7) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 1.2 -0.7) (end 1.2 0.7) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 1.2 0.7) (end -1.2 0.7) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.2 0.7) (end -1.2 -0.7) (layer F.CrtYd) (width 0.05))
+    (pad 1 smd rect (at -0.95 0) (size 1.3 1.1) (layers F.Cu F.Paste F.Mask) (net 1 N1))
+    (pad 2 smd rect (at 0.95 0) (size 1.3 1.1) (layers F.Cu F.Paste F.Mask) (net 2 N2))
+  )
+
+  ; 40 x 30 rectangle board outline.
+  (gr_line (start 0 0) (end 40 0) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 40 0) (end 40 30) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 40 30) (end 0 30) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 0 30) (end 0 0) (layer Edge.Cuts) (width 0.1))
+
+)

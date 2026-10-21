@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kicad-enclosure"
+version = "0.1.0"
+description = "Generate a printable 3D enclosure (base + lid) from a KiCad .kicad_pcb board file."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Chuck" },
+]
+keywords = ["kicad", "enclosure", "cad", "3d-printing", "build123d", "pcb", "step", "stl"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "build123d>=0.7",
+]
+
+[project.optional-dependencies]
+validate = ["trimesh>=4.0"]
+dev = ["trimesh>=4.0", "matplotlib>=3.7"]
+
+[project.urls]
+Homepage = "https://github.com/heartland-eng/kicad-enclosure"
+Documentation = "https://github.com/heartland-eng/kicad-enclosure#readme"
+Repository = "https://github.com/heartland-eng/kicad-enclosure"
+Issues = "https://github.com/heartland-eng/kicad-enclosure/issues"
+
+[project.scripts]
+kicad-enclosure = "kicad_enclosure.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["kicad_parser", "kicad_enclosure"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "kicad_parser",
+    "kicad_enclosure",
+    "scripts",
+    "tests",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "pyproject.toml",
+]

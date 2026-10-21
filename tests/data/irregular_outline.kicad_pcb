@@ -1,0 +1,66 @@
+(kicad_pcb (version 20240108) (generator "pcbnew")
+
+  (general
+    (thickness 1.6)
+  )
+
+  (footprint "MountingHole_3.0mm_M3" (layer "F.Cu")
+    (at 3 3)
+    (property "Reference" "H1" (at 0 0) (layer "F.SilkS" hide) (uuid "10000000-0000-0000-0000-000000000001"))
+    (fp_text reference "H1" (at 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask") (uuid "10000000-0000-0000-0000-000000000101"))
+  )
+
+  (footprint "MountingHole_3.0mm_M3" (layer "F.Cu")
+    (at 37 3)
+    (property "Reference" "H2" (at 0 0) (layer "F.SilkS" hide) (uuid "10000000-0000-0000-0000-000000000002"))
+    (fp_text reference "H2" (at 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+    (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask") (uuid "10000000-0000-0000-0000-000000000102"))
+  )
+
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (layer "F.Cu")
+    (at 15 10)
+    (property "Reference" "U1" (at 0 -3.7) (layer "F.SilkS") (uuid "10000000-0000-0000-0000-000000000003"))
+    (property "Value" "U1" (at 0 3.7) (layer "F.Fab") (uuid "10000000-0000-0000-0000-000000000004"))
+    (fp_text reference "U1" (at 0 -3.7) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+    (fp_rect (start -2 -2) (end 2 2) (layer "F.CrtYd") (stroke (width 0.05) (type default)) (fill none))
+    (pad "1" smd rect (at -2.54 -1.905) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "N1") (uuid "10000000-0000-0000-0000-000000000201"))
+    (pad "2" smd rect (at -2.54 -0.635) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "N2") (uuid "10000000-0000-0000-0000-000000000202"))
+    (pad "3" smd rect (at -2.54 0.635) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "N3") (uuid "10000000-0000-0000-0000-000000000203"))
+    (pad "4" smd rect (at -2.54 1.905) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "N4") (uuid "10000000-0000-0000-0000-000000000204"))
+    (pad "5" smd rect (at 2.54 1.905) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 5 "N5") (uuid "10000000-0000-0000-0000-000000000205"))
+    (pad "6" smd rect (at 2.54 0.635) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 6 "N6") (uuid "10000000-0000-0000-0000-000000000206"))
+    (pad "7" smd rect (at 2.54 -0.635) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 7 "N7") (uuid "10000000-0000-0000-0000-000000000207"))
+    (pad "8" smd rect (at 2.54 -1.905) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (net 8 "N8") (uuid "10000000-0000-0000-0000-000000000208"))
+  )
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 25 5 90)
+    (property "Reference" "D1" (at 0 1.5) (layer "F.SilkS") (uuid "10000000-0000-0000-0000-000000000005"))
+    (property "Value" "1N4148" (at 0 -1.5) (layer "F.Fab") (uuid "10000000-0000-0000-0000-000000000006"))
+    (fp_text reference "D1" (at 0 1.5) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+    (fp_rect (start -1 -1.5) (end 1 1.5) (layer "F.CrtYd") (stroke (width 0.05) (type default)) (fill none))
+    (pad "1" smd rect (at -1.2 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "N9") (uuid "10000000-0000-0000-0000-000000000209"))
+    (pad "2" smd rect (at 1.2 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "N10") (uuid "10000000-0000-0000-0000-00000000020a"))
+  )
+
+  (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
+    (at 5 15)
+    (property "Reference" "R5" (at 0 1.4) (layer "F.SilkS") (uuid "10000000-0000-0000-0000-000000000007"))
+    (property "Value" "4.7k" (at 0 -1.4) (layer "F.Fab") (uuid "10000000-0000-0000-0000-000000000008"))
+    (fp_text reference "R5" (at 0 1.4) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+    (pad "1" smd rect (at -1 0) (size 1 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "N11") (uuid "10000000-0000-0000-0000-00000000020b"))
+    (pad "2" smd rect (at 1 0) (size 1 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "N12") (uuid "10000000-0000-0000-0000-00000000020c"))
+  )
+
+  ; A 40 x 20 rectangle with a 5 mm rounded top-right corner (gr_arc).
+  (gr_line (start 0 0) (end 40 0) (layer "Edge.Cuts") (stroke (width 0.1) (type default)) (uuid "10000000-0000-0000-0000-000000000301"))
+  (gr_line (start 40 0) (end 40 15) (layer "Edge.Cuts") (stroke (width 0.1) (type default)) (uuid "10000000-0000-0000-0000-000000000302"))
+  (gr_arc (start 40 15) (mid 38.5355 18.5355) (end 35 20) (layer "Edge.Cuts") (stroke (width 0.1) (type default)) (uuid "10000000-0000-0000-0000-000000000303"))
+  (gr_line (start 35 20) (end 0 20) (layer "Edge.Cuts") (stroke (width 0.1) (type default)) (uuid "10000000-0000-0000-0000-000000000304"))
+  (gr_line (start 0 20) (end 0 0) (layer "Edge.Cuts") (stroke (width 0.1) (type default)) (uuid "10000000-0000-0000-0000-000000000305"))
+
+  ; A 4 mm non-plated circular cutout / mounting hole drawn directly on Edge.Cuts.
+  (gr_circle (center 20 10) (end 20 12) (layer "Edge.Cuts") (stroke (width 0.1) (type default)) (uuid "10000000-0000-0000-0000-000000000306"))
+
+)
